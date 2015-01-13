@@ -24,7 +24,7 @@ m <- NULL
 cacheSolve <- function(x, ...) {
 m <- x$getinv()
   if(!is.null(m)) {
-    message("getting cached data")
+    message("getting cached matrix")
     return(m)
   }
   matrix <- x$get()
